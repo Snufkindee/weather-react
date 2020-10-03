@@ -18,7 +18,7 @@ const WeatherContainer = ({ location }) => {
 
   const getWeather = (q) => {
     setLoading(true);
-    let apiPrefix = `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=253cde5bb1978a9b7cb87ab6fffec1f0&APPID=`;
+    let apiPrefix = `https://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=253cde5bb1978a9b7cb87ab6fffec1f0&APPID=`;
     axios
       .get(apiPrefix + process.env.REACT_APP_WEATHER_API_KEY)
       .then((e) => {
