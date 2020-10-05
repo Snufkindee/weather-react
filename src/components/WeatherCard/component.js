@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 const WeatherCard = ({ temp, condition, city, country, icon, getWeather }) => {
   let bg = null;
+  let minColdTemp = 15;
 
   if (temp > minColdTemp) {
     bg = `linear-gradient(to bottom, #fdc830, #f37335)`;
